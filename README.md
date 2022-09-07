@@ -120,7 +120,8 @@ https://www.bilibili.com/video/BV1Xw411f7FW?p=7&spm_id_from=333.1007.top_right_b
 2、将https://github.com/Guanbin-Huang/tensorRT_Pro_co-comments/tree/main/simple_yolo/workspace  
 
 中的文件复制到env/bin下  
-3、 
+3、  
+
    项目->属性->配置属性->常规->输出目录：../../bin/  
    
    项目->属性->配置属性->调试->工作目录：../../bin/  

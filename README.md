@@ -8,7 +8,8 @@ windows下TensorRT零基础部署yolo
 只需要这几个代码文件
 该仓库，以及，其提供的教程不是很完整，且有很多坑，本教程用来将onnx模型部署到win系统,win下运行成功  
 
-##一、环境配置
+一、环境配置
+-----------
 vs2017 或以上  
 
 opencv 4.6 https://opencv.org/releases/  
@@ -61,7 +62,8 @@ protobuf3.11.4:https://github.com/protocolbuffers/protobuf/releases?page=6
    
    注意：cuda一定要自己安装在电脑上以后再复制到该环境中(坑）  
    
-##二、用自己的vs创建环境：  
+二、用自己的vs创建环境：  
+-----------------------
 
 大坑：参考仓库没说这点，导致本人在这里挣扎了好久，  
 
@@ -79,48 +81,10 @@ v编译下，会找不到stdio.h
 
 把https://github.com/Guanbin-Huang/tensorRT_Pro_co-comments/tree/main/simple_yolo/src  
 下的几个文件复制到下项目目录，也就是sln文件所在目录    
-
 更改simpl_yolo.cu最上面的包含代码如下s在创建项目时选择visualc++->cuda***runtime 项目模板，这时候，项目中会产生个cu文件  
 
-
-#************************************************#    
-
-#include "simple_yolo.hpp"    
-#include <NvInfer.h>    
-#include <NvOnnxParser.h>    
-#include <cuda_runtime.h>    
-#include "cuda_runtime.h"    
-#include "device_launch_parameters.h"    
-#include "sm_20_atomic_functions.h"   
-#include <stdio.h>  
-#include <algorithm>     
-#include <fstream>       
-#include <memory>    
-#include <string>      
-#include <future>   
-#include <condition_variable>    
-#include <mutex>  
-#include <thread>  
-#include <queue>  
-
-#if defined(_WIN32)  
-#	include <Windows.h>  
-#   include <wingdi.h>  
-#	include <Shlwapi.h>  
-#	pragma comment(lib, "shlwapi.lib")  
-#	undef min  
-#	undef max  
-#else  
-#	include <dirent.h>  
-#	include <sys/types.h>  
-#	include <sys/stat.h>  
-#	include <unistd.h>  
-#   include <stdarg.h>  
-#endif  
-#************************************************#  
-
-  
-##三、导出onnx模型  
+三、导出onnx模型
+------------
 yolov5:https://github.com/ultralytics/yolov5  
 yoloX :https://github.com/Megvii-BaseDetection/YOLOX  
 yolov7:https://github.com/WongKinYiu/yolov7  

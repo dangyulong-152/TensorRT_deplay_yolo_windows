@@ -117,7 +117,8 @@ https://www.bilibili.com/video/BV1Xw411f7FW?p=7&spm_id_from=333.1007.top_right_b
 ------------
 1、将导出的onnx模型改名为：yolo5s_dynamic.onnx并复制到bin中，  
 
-2、将https://github.com/Guanbin-Huang/tensorRT_Pro_co-comments/tree/main/simple_yolo/workspace  
+2、将  
+https://github.com/Guanbin-Huang/tensorRT_Pro_co-comments/tree/main/simple_yolo/workspace  
 
 中的文件复制到env/bin下  
 3、  

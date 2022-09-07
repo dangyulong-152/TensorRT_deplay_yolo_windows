@@ -5,17 +5,27 @@ windows下TensorRT零基础部署yolo
 只需要这几个代码文件  
 该仓库，以及，其提供的教程不是很完整，且有很多坑，本教程用来将onnx模型部署到win系统,win下运行成功   
 
-一、环境配置          
+一、环境配置            
 ------------  
+
 vs2017 或以上  
+
 opencv 4.6 https://opencv.org/releases/  
+
 tensorRT,cuda,cudnn配套即可 没有必要与onnx模型导出时的环境搭配  
+
 cuda: https://developer.nvidia.cn/cuda-toolkit-archive  
+
 cudnn: https://developer.nvidia.cn/rdp/cudnn-download 
+
 tensorRT:https://developer.nvidia.cn/nvidia-tensorrt-download  
+
 坑1：必须先安装vs,在安装cuda,这样可以在vs中集成cuda开发环境  
+
 protobuf3.11.4:https://github.com/protocolbuffers/protobuf/releases?page=6  
+
 注意：protobuf的版本是参考仓库指定的  
+
 具体操作：  
 1、安装cuda  
 2、安装vs,勾选C+++环境必要的组件，勾选windowsSDk8.1  

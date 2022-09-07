@@ -5,8 +5,9 @@ windows下TensorRT零基础部署yolo
 只需要这几个代码文件  
 该仓库，以及，其提供的教程不是很完整，且有很多坑，本教程用来将onnx模型部署到win系统,win下运行成功   
 
-一、环境配置
+一、环境配置  
 -----------
+
 vs2017 或以上  
 opencv 4.6 https://opencv.org/releases/  
 tensorRT,cuda,cudnn配套即可 没有必要与onnx模型导出时的环境搭配  

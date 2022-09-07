@@ -138,4 +138,7 @@ vs2017
 cuda11.6  
 后使用  
 百度网盘有全部文件，安装完vs2017,cuda11.6后，直接下载文件并解压缩，打开env/source/yolo_test_/下的sln文件编译运行  
-  
+
+  链接：https://pan.baidu.com/s/12blbBTeVSlfzPnXMiSaErw?pwd=dljz 
+提取码：dljz 
+--来自百度网盘超级会员V5的分享

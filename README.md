@@ -1,9 +1,9 @@
-# TensorRT_deplay_yolo_windows
+==== TensorRT_deplay_yolo_windows
 windows下TensorRT零基础部署yolo  
 
 参考仓库：https://github.com/Guanbin-Huang/tensorRT_Pro_co-comments  
 
-代码：https://github.com/Guanbin-Huang/tensorRT_Pro_co-comments/tree/main/simple_yolo/src  
+代码：https://github.com/Guanbin-Huang/tensorRT_Pro_co-comments/tree/main/simple_yolo/src    
 
 只需要这几个代码文件
 该仓库，以及，其提供的教程不是很完整，且有很多坑，本教程用来将onnx模型部署到win系统,win下运行成功  
@@ -77,7 +77,8 @@ v编译下，会找不到stdio.h
 
 删除这个cu文件，应该是叫：kernal.cu  
 
-把https://github.com/Guanbin-Huang/tensorRT_Pro_co-comments/tree/main/simple_yolo/src下的几个文件复制到下项目目录，也就是sln文件所在目录  
+把https://github.com/Guanbin-Huang/tensorRT_Pro_co-comments/tree/main/simple_yolo/src  
+下的几个文件复制到下项目目录，也就是sln文件所在目录    
 
 更改simpl_yolo.cu最上面的包含代码如下s在创建项目时选择visualc++->cuda***runtime 项目模板，这时候，项目中会产生个cu文件  
 
@@ -124,10 +125,11 @@ yolov5:https://github.com/ultralytics/yolov5
 yoloX :https://github.com/Megvii-BaseDetection/YOLOX  
 yolov7:https://github.com/WongKinYiu/yolov7  
 在导出onnx模型时需要修改一些代码，具体修改及导出onnx的方法参考视频：  
-https://www.bilibili.com/video/BV1Xw411f7FW?p=7&spm_id_from=333.1007.top_right_bar_window_history.content.click  
+https://www.bilibili.com/video/BV1Xw411f7FW?p=7&spm_id_from=333.1007.top_right_bar_window_history.content.click    
 注意：导出参数设置device=0  
   具体命令为：export --include=onnx device=0可能是这个，具体参考内yolo几个官方仓库  
 三、编译运行  
 1、将导出的onnx模型改名为：yolo5s_dynamic.onnx并复制到bin中，  
-将https://github.com/Guanbin-Huang/tensorRT_Pro_co-comments/tree/main/simple_yolo/workspace中的文件复制到env/bin下编译运行即可  
+将https://github.com/Guanbin-Huang/tensorRT_Pro_co-comments/tree/main/simple_yolo/workspace  
+中的文件复制到env/bin下编译运行即可  
 

@@ -82,39 +82,22 @@ v编译下，会找不到stdio.h
 更改simpl_yolo.cu最上面的包含代码如下s在创建项目时选择visualc++->cuda***runtime 项目模板，这时候，项目中会产生个cu文件  
 
 
+#************************************************#    
 
-#************************************************#  
-
-#include "simple_yolo.hpp"  
-
-#include <NvInfer.h>  
-
-#include <NvOnnxParser.h>  
-
-#include <cuda_runtime.h>  
-
-#include "cuda_runtime.h"  
-
-#include "device_launch_parameters.h"  
- 
-#include "sm_20_atomic_functions.h"  
-
-
+#include "simple_yolo.hpp"    
+#include <NvInfer.h>    
+#include <NvOnnxParser.h>    
+#include <cuda_runtime.h>    
+#include "cuda_runtime.h"    
+#include "device_launch_parameters.h"    
+#include "sm_20_atomic_functions.h"   
 #include <stdio.h>  
-
-
-#include <algorithm>  
-   
-#include <fstream>  
-   
-#include <memory>  
-   
-#include <string>  
-   
-#include <future>  
-   
-#include <condition_variable>  
-   
+#include <algorithm>     
+#include <fstream>       
+#include <memory>    
+#include <string>      
+#include <future>   
+#include <condition_variable>    
 #include <mutex>  
 #include <thread>  
 #include <queue>  
@@ -134,6 +117,7 @@ v编译下，会找不到stdio.h
 #   include <stdarg.h>  
 #endif  
 #************************************************#  
+
   
 二、导出onnx模型  
 yolov5:https://github.com/ultralytics/yolov5  

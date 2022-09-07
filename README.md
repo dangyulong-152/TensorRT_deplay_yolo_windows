@@ -80,7 +80,7 @@ v编译下，会找不到stdio.h
 删除这个cu文件，应该是叫：kernal.cu  
 
 把https://github.com/Guanbin-Huang/tensorRT_Pro_co-comments/tree/main/simple_yolo/src  
-下的几个文件复制到下项目目录，也就是sln文件所在目录    
+下的几个文件复制到项目目录，也就是sln文件所在目录    
 更改simpl_yolo.cu最上面的包含代码如下s在创建项目时选择visualc++->cuda***runtime 项目模板，这时候，项目中会产生个cu文件  
 
 三、导出onnx模型

@@ -6,8 +6,7 @@ windows下TensorRT零基础部署yolo
 该仓库，以及，其提供的教程不是很完整，且有很多坑，本教程用来将onnx模型部署到win系统,win下运行成功   
 
 一、环境配置  
-----  
-
+------------  
 vs2017 或以上  
 opencv 4.6 https://opencv.org/releases/  
 tensorRT,cuda,cudnn配套即可 没有必要与onnx模型导出时的环境搭配  
@@ -59,7 +58,7 @@ simpl_yolo.cu最上面的包含代码添加如下几项：
 编译下，这时候应该可以通过了
 
 三、导出onnx模型
-------------
+----------------
 yolov5:https://github.com/ultralytics/yolov5  
 yoloX :https://github.com/Megvii-BaseDetection/YOLOX  
 yolov7:https://github.com/WongKinYiu/yolov7  
@@ -69,7 +68,7 @@ https://www.bilibili.com/video/BV1Xw411f7FW?p=7&spm_id_from=333.1007.top_right_b
 具体命令为：export --include=onnx device=0可能是这个，具体参考内yolo几个官方仓库   
 
 四、编译运行  
-----
+------------
 1、将导出的onnx模型改名为：yolo5s_dynamic.onnx并复制到bin中，  
 2、将https://github.com/Guanbin-Huang/tensorRT_Pro_co-comments/tree/main/simple_yolo/workspace  
 中的文件复制到env/bin下  
